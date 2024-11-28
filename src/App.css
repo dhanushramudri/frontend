@@ -45,7 +45,6 @@ body {
   font-size: 14px;
   color: #007bff;
 }
-* Container for Sidebar and Main Content */
 .container {
   display: flex;
   height: 100vh;
@@ -168,7 +167,8 @@ h1 {
   justify-content: space-between;
 }
 
-.admiedit, .admidelete {
+.admiedit,
+.admidelete {
   padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
@@ -199,125 +199,124 @@ ul.adminproductcard {
   margin-top: 20px;
 }
 
-  .banner-img{
-    align-content: center;
-    justify-content: center;
-    width: 2120px;
-    height: 400px;
-  }
-  .banner{
-    overflow: hidden;
-  }
-  .reg{
-    margin-top: 11% ;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    background-color: #fff193;
-    height: 470px;
-    width: 400px;
-  }
-  .reg input{
-    margin-top: 40px;
-    width: 250px;
-    height: 25px;
-    margin-left: 70px;
-  }
-  .reg button{
-    margin-top: 40px;
-    width: 250px;
-    height: 25px;
-    margin-left: 70px;
-    background-color: #90eafe;
-    color: #050505;
-  }
-  .reg .Link{
-    width: 300px;
-    height: 30px;
-    margin-left: 130px;
-    color: #0a0a0a;
-    font-size: 16px;
-    text-decoration: none;
-  }
-  .register-page{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .regimg{
-    width: 400px;
-    height: 90px;
-  }
-  
-  .log{
-    margin-top: 20% ;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    background-color: #fff193;
-    height: 370px;
-    width: 400px;
-  }
-  .log input{
-    margin-top: 40px;
-    width: 250px;
-    height: 25px;
-    margin-left: 70px;
-  }
-  .log button{
-    margin-top: 40px;
-    width: 250px;
-    height: 25px;
-    margin-left: 70px;
-    background-color: #90eafe;
-    color: #050505;
-  }
-  .log .Link{
-    width: 300px;
-    height: 30px;
-    margin-left: 90px;
-    color: #0a0a0a;
-    font-size: 16px;
-    text-decoration: none;
-  }
-  .login-page{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .logoimg{
-    width: 50px;
-    height: 50px;
-  }
-  .btn {
-    display: inline-block;
-    background: linear-gradient(135deg, #c4fdb6, #ffcfa7);
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-decoration: none; /* Ensures no underline */
-  }
-  
-  .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .btn a {
-    color: inherit; /* Matches the button text color */
-    text-decoration: none; /* Removes underline */
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-  }
-  
+.banner-img {
+  align-content: center;
+  justify-content: center;
+  width: 2120px;
+  height: 400px;
+}
+.banner {
+  overflow: hidden;
+}
+.reg {
+  margin-top: 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #fff193;
+  height: 470px;
+  width: 400px;
+}
+.reg input {
+  margin-top: 40px;
+  width: 250px;
+  height: 25px;
+  margin-left: 70px;
+}
+.reg button {
+  margin-top: 40px;
+  width: 250px;
+  height: 25px;
+  margin-left: 70px;
+  background-color: #90eafe;
+  color: #050505;
+}
+.reg .Link {
+  width: 300px;
+  height: 30px;
+  margin-left: 130px;
+  color: #0a0a0a;
+  font-size: 16px;
+  text-decoration: none;
+}
+.register-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.regimg {
+  width: 400px;
+  height: 90px;
+}
+
+.log {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #fff193;
+  height: 370px;
+  width: 400px;
+}
+.log input {
+  margin-top: 40px;
+  width: 250px;
+  height: 25px;
+  margin-left: 70px;
+}
+.log button {
+  margin-top: 40px;
+  width: 250px;
+  height: 25px;
+  margin-left: 70px;
+  background-color: #90eafe;
+  color: #050505;
+}
+.log .Link {
+  width: 300px;
+  height: 30px;
+  margin-left: 90px;
+  color: #0a0a0a;
+  font-size: 16px;
+  text-decoration: none;
+}
+.login-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoimg {
+  width: 50px;
+  height: 50px;
+}
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #c4fdb6, #ffcfa7);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none; /* Ensures no underline */
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn a {
+  color: inherit; /* Matches the button text color */
+  text-decoration: none; /* Removes underline */
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
