@@ -1,38 +1,323 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f6ed;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: #007bff;
+}
+
+.tags {
+  margin-top: 20px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #e0f7fa;
+  border-radius: 20px;
+  margin: 5px 5px 0 0;
+  font-size: 14px;
+  color: #007bff;
+}
+* Container for Sidebar and Main Content */
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logoimg {
+  width: 80%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Main Content */
+.note {
+  flex: 1;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Admin Product Form */
+.adminproductform {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.adminproductform input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.adminproductform button {
+  padding: 10px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.adminproductform button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Product Cards */
+.adminproductcard {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0;
 }
+
+.cardadmin {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardadmin:hover {
+  transform: translateY(-5px);
+}
+
+.adminname {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.admincontent {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.admiedit, .admidelete {
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.admiedit {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.admiedit:hover {
+  background-color: #45a049;
+}
+
+.admidelete {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.admidelete:hover {
+  background-color: #e53935;
+}
+
+ul.adminproductcard {
+  margin-top: 20px;
+}
+
+  .banner-img{
+    align-content: center;
+    justify-content: center;
+    width: 2120px;
+    height: 400px;
+  }
+  .banner{
+    overflow: hidden;
+  }
+  .reg{
+    margin-top: 11% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #fff193;
+    height: 470px;
+    width: 400px;
+  }
+  .reg input{
+    margin-top: 40px;
+    width: 250px;
+    height: 25px;
+    margin-left: 70px;
+  }
+  .reg button{
+    margin-top: 40px;
+    width: 250px;
+    height: 25px;
+    margin-left: 70px;
+    background-color: #90eafe;
+    color: #050505;
+  }
+  .reg .Link{
+    width: 300px;
+    height: 30px;
+    margin-left: 130px;
+    color: #0a0a0a;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .register-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .regimg{
+    width: 400px;
+    height: 90px;
+  }
+  
+  .log{
+    margin-top: 20% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #fff193;
+    height: 370px;
+    width: 400px;
+  }
+  .log input{
+    margin-top: 40px;
+    width: 250px;
+    height: 25px;
+    margin-left: 70px;
+  }
+  .log button{
+    margin-top: 40px;
+    width: 250px;
+    height: 25px;
+    margin-left: 70px;
+    background-color: #90eafe;
+    color: #050505;
+  }
+  .log .Link{
+    width: 300px;
+    height: 30px;
+    margin-left: 90px;
+    color: #0a0a0a;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .login-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoimg{
+    width: 50px;
+    height: 50px;
+  }
+  .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #c4fdb6, #ffcfa7);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none; /* Ensures no underline */
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn a {
+    color: inherit; /* Matches the button text color */
+    text-decoration: none; /* Removes underline */
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  
