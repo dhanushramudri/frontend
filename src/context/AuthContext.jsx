@@ -79,11 +79,14 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (credentials) => {
     try {
-      const response = await fetch("https://backend-5599.vercel.app/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(credentials),
-      });
+      const response = await fetch(
+        "https://backend-5599.vercel.app/api/auth/register",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(credentials),
+        }
+      );
 
       const data = await response.json();
       console.log("Register response:", data);
