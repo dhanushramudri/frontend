@@ -1,7 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
-import { Home, BookOpen, LayoutDashboard, LogIn, Menu, Shield } from "lucide-react";
+import {
+  Home,
+  BookOpen,
+  LayoutDashboard,
+  LogIn,
+  Menu,
+  Shield,
+} from "lucide-react";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -30,14 +37,30 @@ const Navbar = () => {
       {/* Sidebar */}
       <nav
         className={`fixed left-0 top-0 h-screen w-64 bg-white shadow-lg flex flex-col p-6 transition-transform duration-300 z-40
-          ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}
+          ${
+            isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+          } lg:translate-x-0`}
       >
         <h2 className="text-2xl font-bold mb-6 text-center">E-Learning</h2>
         <div className="flex flex-col space-y-6 flex-grow">
           <NavItem to="/" icon={<Home className="w-6 h-6" />} label="Home" />
-          <NavItem to="/training" icon={<BookOpen className="w-6 h-6" />} label="Training" />
-          <NavItem to="/dashboard" icon={<LayoutDashboard className="w-6 h-6" />} label="Dashboard" />
-          {isAdmin && <NavItem to="/admin" icon={<Shield className="w-6 h-6" />} label="Admin" />}
+          <NavItem
+            to="/training"
+            icon={<BookOpen className="w-6 h-6" />}
+            label="Training"
+          />
+          <NavItem
+            to="/dashboard"
+            icon={<LayoutDashboard className="w-6 h-6" />}
+            label="Dashboard"
+          />
+          {isAdmin && (
+            <NavItem
+              to="/admin"
+              icon={<Shield className="w-6 h-6" />}
+              label="Admin"
+            />
+          )}
         </div>
         <Button
           onClick={handleLoginClick}

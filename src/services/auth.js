@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/progress";
+const API_URL = "https://backend-5599.vercel.app/api/progress";
 
 export const getProgress = async (userId) => {
   try {

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/quizzes";
+const API_URL = "https://backend-5599.vercel.app/api/quizzes";
 
 // Fetch all quizzes
 export const getQuizzes = async () => {
@@ -17,7 +17,9 @@ export const createQuiz = async (quizData) => {
 // Submit a quiz
 export const submitQuiz = async (quizId, answers) => {
   try {
-    const response = await axios.post(`${API_URL}/${quizId}/submit`, { answers });
+    const response = await axios.post(`${API_URL}/${quizId}/submit`, {
+      answers,
+    });
     return response.data;
   } catch (error) {
     console.error("Error submitting quiz:", error);
